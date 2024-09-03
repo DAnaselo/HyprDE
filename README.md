@@ -1,1 +1,1 @@
-Download Hyprland - rofi-wayland - waybar... ARCH LINUX ONLY
+Download Hyprland - hyprlock - hypridle - rofi-wayland - waybar... ARCH LINUX ONLY
