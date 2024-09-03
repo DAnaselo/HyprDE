@@ -11,7 +11,7 @@ xwayland {
 ### AUTOSTART ###
 #################
 
-exec-once = waybar  & swww-daemon & hyprlock & hypridle
+exec-once = waybar  & swww-daemon
 exec-once = udiskie --appindicator --quiet --no-notify
 
 #############################
