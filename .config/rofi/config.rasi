@@ -5,19 +5,14 @@ configuration {
     display-drun:    "";
     disable-history: false;
     modi: "drun,ssh,window,filebrowser";
-    icon-theme: "Papirus";
 }
 
 * {
     font: "JetbrainsMono Nerd Font Medium 16";
-    foreground: #f8f8f2;
-    background-color: #282a36;
-    active-background: #6272a4;
-    urgent-background: #ff5555;
-    urgent-foreground: #282a36;
-    selected-background: @active-background;
-    selected-urgent-background: @urgent-background;
-    selected-active-background: @active-background;
+    foreground: #EEEEEC;
+    background-color: #1e1e1e;
+    active-background: #3e3e3e;
+    selected-background: #4e4e4e;
     separatorcolor: @active-background;
     bordercolor: @active-background;
 }

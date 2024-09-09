@@ -40,7 +40,7 @@
     "clock":{
         "format": "{:%I:%M%p - %m/%d}",
         "on-click": "pkill -9 rofi",
-	"tooltip": false
+	      "tooltip-format": "<big>{:%A, %d.%B %Y }</big>\n<tt><small>{calendar}</small></tt>"
     },
     "custom/power":{
         "icon-size": 15,
