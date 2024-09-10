@@ -38,9 +38,12 @@ window#waybar {
 #custom-menu,
 #window,
 #clock,
-#pulseaudio,
+#wireplumber,
 #workspaces,
 #tray,
+#privacy,
+#gamemode,
+#inhibitor,
 #backlight {
     background: #1e1e1e;  
     padding: 0px 10px;
@@ -72,6 +75,18 @@ window#waybar {
     padding-left: 5px;
     padding-right: 10px;
 }
+#gamemode {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 6px;
+    padding-right: 9px;
+}
+#privacy {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 #window {
     margin-left: 60px;
@@ -83,7 +98,7 @@ window#waybar {
     margin-right: 2px;
 }
 
-#pulseaudio {
+#wireplumber {
     margin-right: 2px;
     margin-left: 2px;
 }
