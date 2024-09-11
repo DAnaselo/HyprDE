@@ -40,8 +40,10 @@
     "spacing": 10
   },
   "clock":{
+    "interval": 60,
     "format": "{:%I:%M%p - %m/%d}",
     "on-click": "pkill -9 rofi",
+    "timezone": "Asia/Jerusalem",
 	  "tooltip-format": "<big>{:%A, %d.%B %Y }</big>\n<tt><small>{calendar}</small></tt>"
   },
   "custom/power":{
