@@ -8,7 +8,8 @@ configuration {
 }
 
 * {
-    font: "JetbrainsMono Nerd Font Medium 16";
+    font: "SF Mono 20";
+    font-weight: "bold";
     foreground: #EEEEEC;
     background-color: #1e1e1e;
     active-background: #3e3e3e;
