@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# this Script Is Used To Watch Youtube Videos Without Ads And Hardware Accelertated Video Decoding Using MPV
+
 # Check if a URL is pasted
 if [[ -z "$(wl-paste)" ]]; then
   hyprctl notify 4 3000 0 "No URL In Clipboard"

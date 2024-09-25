@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This Script Fixes The '0' Power Usage Bug Reported on intel Cpu's when trying to display their power Consumpotion in Mangohud
+
 # Attempt to modify permissions
 if ! sudo chmod o+r /sys/class/powercap/intel-rapl\:0/energy_uj; then
   echo "Failed to modify permissions of '/sys/class/powercap/intel-rapl\:0/energy_uj'."

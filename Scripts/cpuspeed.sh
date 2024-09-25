@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This Script Sets a Clock Limit For Power Save Reasons
+
 # Check if cpupower is installed
 if ! command -v cpupower &>/dev/null; then
   echo "cpupower is not installed. Please install it using 'sudo pacman -S cpupower'"
