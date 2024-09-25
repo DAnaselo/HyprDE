@@ -2,6 +2,10 @@ Install Required Packages
 ```
 sudo pacman -S hyprland hypridle hyprlock hyprpaper nautilus gtk3 xdg-desktop-portal-hyprland rofi-wayland waybar nwg-look papirus-icon-theme cliphist
 ```
+Download The Crunchy Apple Fonts From The AUR
+```
+paru -S apple-fonts
+```
 I Personally use greetd
 ```
 sudo pacman -S greetd && sudo systemctl enable greetd
