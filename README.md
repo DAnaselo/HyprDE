@@ -17,5 +17,6 @@ git clone --depth 1 https://github.com/DAnaselo/HyprDE
 ARCH LINUX ONLY
 
 Screenshot For Refrence
-![1726073551_grim](https://github.com/user-attachments/assets/6420a287-0071-4b9f-8419-90a7a220e975)
+![1727275648_grim](https://github.com/user-attachments/assets/df21dcd9-11ba-4cc9-9d46-26c3ddd51ec2)
+
 
