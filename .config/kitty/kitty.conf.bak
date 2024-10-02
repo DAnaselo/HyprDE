@@ -1,6 +1,5 @@
 font_size 12
 enable_audio_bell no
-font_family      family="SF Mono"
 background_opacity 0.8
 confirm_os_window_close 0
 hide_window_decorations yes
