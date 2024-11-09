@@ -1,12 +1,12 @@
 Install Required Packages
 ```
-sudo pacman -S hyprland hypridle hyprlock hyprpaper nautilus gtk3 xdg-desktop-portal-hyprland rofi-wayland waybar nwg-look papirus-icon-theme cliphist
+sudo pacman -S hyprland hypridle hyprlock hyprpaper kitty btop fish nautilus xdg-desktop-portal-hyprland xdg-desktop-portal-gtk rofi-wayland waybar ttf-nerd-fonts-symbols wl-clipboard cliphist
 ```
-Download The Crunchy Apple Fonts From The AUR
+Download The Apple Fonts From The AUR
 ```
 paru -S apple-fonts
 ```
-I Personally use greetd
+For Login Management, I Personally use greetd
 ```
 sudo pacman -S greetd && sudo systemctl enable greetd
 ```
@@ -18,9 +18,3 @@ Install This Repo Using This Command
 ```
 git clone --depth 1 https://github.com/DAnaselo/HyprDE
 ```
-ARCH LINUX ONLY
-
-Screenshot For Refrence
-![1727275648_grim](https://github.com/user-attachments/assets/df21dcd9-11ba-4cc9-9d46-26c3ddd51ec2)
-
-
