@@ -15,4 +15,4 @@ url="$(wl-paste)"
 hyprctl notify 1 6000 0 "Video starting..."
 
 # Play the video using mpv with additional options
-flatpak run io.mpv.Mpv --fs --hwdec=auto --ytdl-format="bestvideo[height<=?1080]+bestaudio/best" --sub-auto=1 --video-subtitle-fonts="DejaVu Sans" $url
+flatpak run io.mpv.Mpv --fs --hwdec=auto --ytdl-format="bestvideo[height<=?1080]+bestaudio/best" $url

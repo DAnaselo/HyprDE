@@ -7,7 +7,7 @@ g435() {
 
 # Function to set the default sink to the HDMI output
 hdmi() {
-  pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo.3
+  pactl set-default-sink alsa_output.pci-0000_01_00.1.hdmi-stereo
 }
 
 # Function to prompt the user to choose a speaker
