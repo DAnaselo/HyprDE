@@ -1,10 +1,6 @@
 Install Required Packages
 ```
-sudo pacman -S hyprland hypridle hyprlock hyprpaper kitty btop fish nautilus xdg-desktop-portal-hyprland xdg-desktop-portal-gtk rofi-wayland waybar ttf-nerd-fonts-symbols wl-clipboard cliphist
-```
-Download The Apple Fonts From The AUR
-```
-paru -S apple-fonts
+sudo pacman -S hyprland hypridle hyprlock hyprpaper kitty btop zsh nautilus xdg-desktop-portal-hyprland xdg-desktop-portal-gtk rofi-wayland waybar ttf-nerd-fonts-symbols wl-clipboard cliphist
 ```
 For Login Management, I Personally use greetd
 ```
