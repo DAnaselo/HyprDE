@@ -1,0 +1,19 @@
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (4), removing 80.0MB
+[LOG] Preloaded target /home/anas/.config/hypr/photomode_15122024_203534.png in 53.38ms -> Pixel size: [1920, 1080]
+[LOG] Buffer created for target /home/anas/.config/hypr/photomode_15122024_203534.png, Shared Memory usage: 33.2MB
+[LOG] Buffer created for target /home/anas/.config/hypr/photomode_15122024_203534.png, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 66.4MB
+[WARN] Monitor HDMI-A-1 does not have a target! A wallpaper will not be created.
+[LOG] configure for DP-2
+[LOG] configure for DP-2
+[LOG] Buffer created for target /home/anas/.config/hypr/photomode_15122024_203534.png, Shared Memory usage: 5.3MB
+[LOG] Total SM usage for all buffers: 71.7MB
+[LOG] Image data for DP-2: /home/anas/.config/hypr/photomode_15122024_203534.png at [-0.00, 0.00], scale: 0.80 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 64415b6bf370
+[LOG] handlePreferredScale: 1.25 for 64415b6bf370
+[LOG] Buffer created for target /home/anas/.config/hypr/photomode_15122024_203534.png, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 80.0MB
+[LOG] Image data for DP-2: /home/anas/.config/hypr/photomode_15122024_203534.png at [-0.00, 0.00], scale: 1.00 (original image size: [1920, 1080])
+[LOG] Submitting viewport dest size 1536x864 for 64415b6bf370
