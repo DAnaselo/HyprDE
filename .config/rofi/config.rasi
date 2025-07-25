@@ -1,10 +1,18 @@
 /*Dracula theme based on the Purple official rofi theme*/
 
 configuration {
+    entry {
+        max-history: 30;
+    }
+    calc {
+        no-persist-history: true;
+	no-history: true;
+        calc-command: "echo {result} | wl-copy";
+    }
     show-icons:      true;
     display-drun:    "";
     disable-history: false;
-    modi: "drun,ssh,window,filebrowser";
+    modi: "drun,window,calc";
 }
 
 * {
@@ -38,12 +46,13 @@ configuration {
     text-color: @foreground;
 }
 #listview {
-    fixed-height: 0;
+    fixed-height: false;
     border:       0px;
     border-color: @bordercolor;
     spacing:      2px ;
     scrollbar:    false;
     padding:      2px 0px 0px ;
+    lines: 5;
 }
 #element {
     border:  0;
@@ -126,6 +135,7 @@ configuration {
     text-color: @foreground;
 }
 element-text, element-icon {
+    size: 1.5em;
     background-color: inherit;
     text-color: inherit;
 }
