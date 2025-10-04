@@ -53,7 +53,8 @@
     "backlight": {
       "label": "󰃟 ",
       "subsystem": "backlight"
-        "buttons-grid": {
+    },
+    "buttons-grid": {
       "actions": [
         {
           "label": "",
