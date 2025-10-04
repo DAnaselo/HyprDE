@@ -12,6 +12,9 @@ configuration {
     show-icons:      true;
     display-drun:    "";
     disable-history: false;
+    hover-select: true;
+    me-select-entry: "MousePrimary";
+    me-accept-entry: "!MousePrimary";
     modi: "drun,window,calc";
 }
 
