@@ -53,28 +53,35 @@
     "backlight": {
       "label": "󰃟 ",
       "subsystem": "backlight"
-    },
-    "buttons-grid": {
+        "buttons-grid": {
       "actions": [
         {
-          "label": "󰔏",
-          "command": "hyprshade toggle redshift"
+          "label": "",
+          "command": "hyprsunset | hyprctl notify 2 5000 1 Hyprsunset active"
         },
         {
-          "label": "󰌵",
-          "command": "hyprshade toggle dim"
+          "label": "󰔚",
+          "command": "hypridle | hyprctl notify 2 5000 1 Hypridle active"
         },
         {
-          "label": "󰊠",
-          "command": "hyprshade toggle grayscale"
+          "label": "",
+          "command": "$HOME/Scripts/audio.sh"
         },
         {
-          "label": "󰏘",
-          "command": "hyprshade toggle vibrance"
+          "label": "",
+          "command": "swaync-client -cp && $HOME/Scripts/screenshot.sh"
         },
         {
-          "label": "󰌁",
-          "command": "hyprshade toggle invert"
+          "label": "",
+          "command": "pkill -9 hyprsunset | hyprctl notify 0 5000 1 Hyprsunset inactive"
+        },
+        {
+          "label": "",
+          "command": "pkill -9 hypridle | hyprctl notify 0 5000 1 Hypridle inactive"
+        },
+        {
+          "label": "󰸳 ",
+          "command": "swaync-client -cp && $HOME/Scripts/steam.sh"
         }
       ]
     }
