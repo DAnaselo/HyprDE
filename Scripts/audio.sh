@@ -10,13 +10,18 @@ airpods() {
   pactl set-default-sink bluez_output.FC_A5_C8_BF_05_82.1 && pactl set-default-source bluez_input.FC:A5:C8:BF:05:82
 }
 
+analog() {
+  pactl set-default-sink alsa_output.pci-0000_00_1f.3.analog-stereo
+}
+
 # Function to prompt the user to choose a speaker
 choose_speakers() {
-  choice=$(printf "G435 Headset\nAirPods 4 with ANC" | rofi -dmenu -p "Choose output:")
+  choice=$(printf "G435 Headset\nAirPods 4 with ANC\nAnalog" | rofi -dmenu -p "Choose output:")
 
   case "$choice" in
     "G435 Headset") g435;;
     "AirPods 4 with ANC") airpods;;
+    "Analog") analog;;
   esac
 }
 
