@@ -3,8 +3,10 @@
 # This Script Fixes The '0' Power Usage Bug Reported on intel Cpu's when trying to display their power Consumpotion in Mangohud
 
 # Attempt to modify permissions
-if ! pkexec chmod o+r /sys/class/powercap/intel-rapl\:0/energy_uj; then
-  echo "Failed to modify permissions of '/sys/class/powercap/intel-rapl\:0/energy_uj'."
+ENERGY_UJ_PATH="/sys/class/powercap/intel-rapl:0/energy_uj"
+
+if ! pkexec chmod o+r "$ENERGY_UJ_PATH"; then
+  echo "Error: Unable to set read permissions for '$ENERGY_UJ_PATH'."
   exit 1
 fi
 

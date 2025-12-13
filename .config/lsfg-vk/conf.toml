@@ -1,6 +1,15 @@
 version = 1
 
 [global]
+no_fp16 = false
+
+[[game]]
+exe = "BlackOps4.exe"
+multiplier = 3
+flow_scale = 1.0
+performance_mode = true
+hdr_mode = false
+experimental_present_mode = "fifo"
 
 [[game]]
 exe = "GTAIV.exe"
@@ -12,7 +21,7 @@ experimental_present_mode = "fifo"
 
 [[game]]
 exe = "GameThread"
-multiplier = 4
+multiplier = 3
 flow_scale = 1.0
 performance_mode = true
 hdr_mode = false
@@ -70,14 +79,6 @@ experimental_present_mode = "fifo"
 exe = "vkcube"
 multiplier = 4
 flow_scale = 0.7
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "BlackOps4.exe"
-multiplier = 3
-flow_scale = 1.0
 performance_mode = true
 hdr_mode = false
 experimental_present_mode = "fifo"
