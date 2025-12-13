@@ -1,0 +1,11 @@
+stow mpv
+stow btop
+stow nvim
+stow hypr
+stow rofi
+stow kitty
+stow waybar
+stow waystt
+stow lsfg-vk
+stow MangoHud
+stow fastfetch
