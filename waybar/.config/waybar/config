@@ -16,6 +16,7 @@
   "modules-right": [
     "tray",
     "privacy",
+    "custom/weather",
     "wireplumber",
     "custom/power"
   ],
@@ -59,6 +60,15 @@
     "tooltip": false,
     "format": "",
     "on-click": "rofi -show drun"
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "icon-size": 20,
+    "spacing": 10,
+    "tooltip": true,
+    "interval": 60,
+    "exec": "wttrbar --location jerusalem --ampm",
+    "return-type": "json"
   },
   "gamemode": {
 	  "format": "{glyph}",

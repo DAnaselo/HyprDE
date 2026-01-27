@@ -1,84 +1,20 @@
-version = 1
+version = 2
 
 [global]
-no_fp16 = false
+allow_fp16 = true
+dll = "/home/anas/.steam/steam/steamapps/common/Lossless Scaling/Lossless.dll"
 
-[[game]]
-exe = "BlackOps4.exe"
-multiplier = 3
+[[profile]]
 flow_scale = 1.0
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "GTAIV.exe"
-multiplier = 2
-flow_scale = 1.0
-performance_mode = false
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "GameThread"
-multiplier = 3
-flow_scale = 1.0
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "LibertyCity.exe"
-multiplier = 2
-flow_scale = 1.0
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "Main"
-multiplier = 1
-flow_scale = 1.0
-performance_mode = false
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "SanAndreas.exe"
-multiplier = 3
-flow_scale = 1.0
-performance_mode = false
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "ViceCity.exe"
-multiplier = 2
-flow_scale = 1.0
-performance_mode = false
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "benchmark"
 multiplier = 4
-flow_scale = 1.0
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
+name = "4x FG / 85% [Performance]"
+pacing = "none"
+performance_mode = false
 
-[[game]]
-exe = "speed.exe"
+[[profile]]
+active_in = "Main"
+flow_scale = 1.0
 multiplier = 2
-flow_scale = 1.0
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
-
-[[game]]
-exe = "vkcube"
-multiplier = 4
-flow_scale = 0.7
-performance_mode = true
-hdr_mode = false
-experimental_present_mode = "fifo"
+name = "2x FG / 100%"
+pacing = "none"
+performance_mode = false

@@ -36,6 +36,7 @@ window#waybar {
 
 #custom-power,
 #custom-menu,
+#custom-weather,
 #window,
 #clock,
 #wireplumber,
@@ -70,6 +71,12 @@ window#waybar {
     padding-right: 5px;
 }
 #custom-menu {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#custom-weather {
     margin-left: 2px;
     margin-right: 2px;
     padding-left: 5px;
