@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir="./undervolt/"
+dir="$HOME/HyprDE/Scripts/undervolt/"
 
 chosen=$(ls "$dir"/*.py | xargs -n 1 basename | rofi -dmenu -p "Run script:")
 
