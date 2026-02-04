@@ -16,6 +16,7 @@
   "modules-right": [
     "tray",
     "privacy",
+    "mpris",
     "custom/weather",
     "wireplumber",
     "custom/power"
@@ -119,6 +120,29 @@
       "default": ["", "", ""]
     }
   },
+  "mpris": {
+    "format": "{player_icon}  {dynamic}",
+    "format-paused": "{player_icon}  <i>{dynamic}</i>",
+    "dynamic-order": ["title", "artist"],
+    "dynamic-len": 40,
+    "player-icons": {
+      "spotify": "",
+      "mpv": "",
+      "vlc": "󰕼",
+      "firefox": "",
+      "default": ""
+    },
+    "status-icons": {
+      "paused": "",
+      "playing": "",
+      "stopped": ""
+    },
+    "tooltip-format": "{player}\n{artist} — {title}",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous",
+    "scroll-step": 5
+  }
 }
 
 

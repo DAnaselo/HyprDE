@@ -12,9 +12,9 @@ pacing = "none"
 performance_mode = false
 
 [[profile]]
-active_in = "Main"
+active_in = [ "GameThread", "GTAIV.exe" ]
 flow_scale = 1.0
 multiplier = 2
-name = "2x FG / 100%"
+name = "something"
 pacing = "none"
 performance_mode = false
