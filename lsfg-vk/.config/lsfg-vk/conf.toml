@@ -7,14 +7,6 @@ dll = "/home/anas/.steam/steam/steamapps/common/Lossless Scaling/Lossless.dll"
 [[profile]]
 flow_scale = 1.0
 multiplier = 4
-name = "4x FG / 85% [Performance]"
-pacing = "none"
-performance_mode = false
-
-[[profile]]
-active_in = [ "GameThread", "GTAIV.exe" ]
-flow_scale = 1.0
-multiplier = 2
-name = "something"
+name = "1"
 pacing = "none"
 performance_mode = false
