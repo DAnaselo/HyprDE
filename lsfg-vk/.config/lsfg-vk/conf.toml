@@ -1,12 +1,6 @@
+profile = []
 version = 2
 
 [global]
 allow_fp16 = true
 dll = "/home/anas/.steam/steam/steamapps/common/Lossless Scaling/Lossless.dll"
-
-[[profile]]
-flow_scale = 1.0
-multiplier = 4
-name = "1"
-pacing = "none"
-performance_mode = false

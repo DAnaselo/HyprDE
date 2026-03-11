@@ -5,7 +5,6 @@ stow hypr
 stow rofi
 stow kitty
 stow waybar
-stow waystt
 stow lsfg-vk
 stow MangoHud
 stow fastfetch
