@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 3;
-    font-family: SF Pro;
+    font-family: FiraMono;
     font-weight: bold;  
     font-size: 14px;
     min-height: 0;
@@ -47,14 +47,14 @@ window#waybar {
 #inhibitor,
 #backlight {
     background: #1e1e1e;  
-    padding: 0px 10px;
-    margin: 3px 0px;
+    padding: 3px 3px;
+    margin: 3px 3px;
     margin-top: 3px;
     border: 1px solid #181825;
 }
 
 #workspaces {
-    padding: 2px;
+    padding: 0px;
     margin-left: 2px;
     margin-right: 2px;
 }

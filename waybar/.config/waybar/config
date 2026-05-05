@@ -1,16 +1,15 @@
 {
   "layer": "top",
-  "position": "bottom",
+  "position": "top",
   "mod": "dock",
   "exclusive": true,
   "passthrough": false,
-  "gtk-layer-shell": true,
+  "height": 5,
   "height": 0,
   "modules-left": [
     "custom/menu",
     "gamemode",
-    "clock",
-    "hyprland/workspaces",
+    "clock"
   ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
@@ -20,22 +19,9 @@
     "wireplumber",
     "custom/power"
   ],
-
   "hyprland/window": {
-    "format": "{}",
+    "format": "{}"
   },
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "on-click": "activate",
-    //"format": "{icon}",
-    "persistent_workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": []
-      }
-    },
   "tray":{
     "icon-size": 20,
     "spacing": 10

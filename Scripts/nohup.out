@@ -1,0 +1,5 @@
+nextcloud.gui.application: Migrating old config from "/home/anas/.local/share/Nextcloud" to "/home/anas/.config/Nextcloud"
+nextcloud.gui.application: Failed to move the old config directory to its new location ( "/home/anas/.local/share/Nextcloud" to "/home/anas/.config/Nextcloud" )
+nextcloud.gui.application: Will move the individual files QList("Nextcloud_sync.log")
+nextcloud.gui.application: Fallback move of  "Nextcloud_sync.log" also failed
+nextcloud.gui.application: Already running, exiting...
