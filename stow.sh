@@ -8,3 +8,5 @@ stow lsfg-vk
 stow MangoHud
 stow fastfetch
 stow icons
+stow niri
+stow btop
