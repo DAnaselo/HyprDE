@@ -7,3 +7,4 @@ stow waybar
 stow lsfg-vk
 stow MangoHud
 stow fastfetch
+stow icons
