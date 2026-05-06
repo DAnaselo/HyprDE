@@ -1,5 +1,4 @@
 stow mpv
-stow btop
 stow nvim
 stow hypr
 stow rofi
