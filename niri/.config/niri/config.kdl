@@ -1,13 +1,14 @@
-// This config is in the KDL format: https://kdl.dev
-// "/-" comments out the following node.
-// Check the wiki for a full description of the configuration:
-// https://yalter.github.io/niri/Configuration:-Introduction
 environment {
     ELECTRON_OZONE_PLATFORM_HINT "auto"
+    QT_QPA_PLATFORM "wayland"
 }
-// Input device configuration.
-// Find the full list of options on the wiki:
-// https://yalter.github.io/niri/Configuration:-Input
+
+cursor {
+    xcursor-theme "MacOS"
+    xcursor-size 32
+    hide-after-inactive-ms 15000
+}
+
 input {
     keyboard {
         repeat-delay 350
@@ -24,19 +25,6 @@ input {
         accel-profile "flat"
         // scroll-method "no-scroll"
     }
-
-    trackpoint {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "on-button-down"
-        // scroll-button 273
-        // scroll-button-lock
-        // middle-emulation
-    }
-        // Focus windows and outputs automatically when moving the mouse into them.
-    // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     focus-follows-mouse max-scroll-amount="0%"
 }
 
@@ -59,7 +47,7 @@ layer-rule {
 layout {
     background-color "transparent"
     // Set gaps around windows in logical pixels.
-    gaps 5
+    gaps 2
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
     //   or right edge of the screen.
@@ -102,64 +90,13 @@ layout {
 
     // You can change how the focus ring looks.
     focus-ring {
-        // Uncomment this line to disable the focus ring.
-        // off
-
-        // How many logical pixels the ring extends out from the windows.
-        width 1.5
-
-        // Colors can be set in a variety of ways:
-        // - CSS named colors: "red"
-        // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
-        // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
-
-        // Color of the ring on the active monitor.
-        active-color "#7fc8ff"
-
-        // Color of the ring on inactive monitors.
-        //
-        // The focus ring only draws around the active window, so the only place
-        // where you can see its inactive-color is on other monitors.
-        inactive-color "#505050"
-
-        // You can also use gradients. They take precedence over solid colors.
-        // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
-        // The angle is the same as in linear-gradient, and is optional,
-        // defaulting to 180 (top-to-bottom gradient).
-        // You can use any CSS linear-gradient tool on the web to set these up.
-        // Changing the color space is also supported, check the wiki for more info.
-        //
-        // active-gradient from="#80c8ff" to="#c7ff7f" angle=45
-
-        // You can also color the gradient relative to the entire view
-        // of the workspace, rather than relative to just the window itself.
-        // To do that, set relative-to="workspace-view".
-        //
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
-    }
-
-    // You can also add a border. It's similar to the focus ring, but always visible.
-    border {
-        // The settings are the same as for the focus ring.
-        // If you enable the border, you probably want to disable the focus ring.
         off
-
-        width 1.5
-        active-color "#ffc87f"
-        inactive-color "#505050"
-
-        // Color of the border around windows that request your attention.
-        urgent-color "#9b0000"
-
-        // Gradients can use a few different interpolation color spaces.
-        // For example, this is a pastel rainbow gradient via in="oklch longer hue".
-        //
-        // active-gradient from="#e5989b" to="#ffb4a2" angle=45 relative-to="workspace-view" in="oklch longer hue"
-
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 
-    // You can enable drop shadows for windows.
+    border {
+        off
+    }
+
     shadow {
         // Uncomment the next line to enable shadows.
         off
@@ -217,7 +154,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-sh-at-startup "swaybg -i /home/anas/HyprDE/Wallpapers/4.png"
+spawn-sh-at-startup "swaybg -i /home/anas/HyprDE/Wallpapers/NasaArtemisII.png"
 spawn-sh-at-startup "syncthing --no-browser"
 spawn-sh-at-startup "udiskie --tray"
 spawn-sh-at-startup "wl-paste --type text --watch cliphist store &"
@@ -320,17 +257,16 @@ binds {
     Mod+W {spawn-sh "flatpak run app.zen_browser.zen"; }
     Mod+G {spawn-sh "notify-send -t 5000 'Gamescope Steam Started' && pkill -9 steam || true && gamescope -w 1920 -h 1080 -W 1920 -H 1080 -r 180 --steam --force-grab-cursor --mangoapp -f -- steam -steamos3 -steamdeck"; }
     Mod+X {spawn "~/HyprDE/Scripts/undervolter.sh"; }
-    // waystt - Speech to Text (direct typing)
-    Mod+Space { spawn "sh" "-c" "pgrep -x waystt >/dev/null && pkill --signal SIGUSR1 waystt || (waystt --pipe-to ydotool type --file - &)"; }
-    
-    // waystt - Speech to Text (clipboard copy)
-    Mod+Shift+Space { spawn "sh" "-c" "pgrep -x waystt >/dev/null && pkill --signal SIGUSR1 waystt || (waystt --pipe-to wl-copy &)"; }
     Mod+Shift+X {spawn "~/HyprDE/Scripts/0power.sh"; }
     Mod+Z {spawn-sh "~/HyprDE/Scripts/audio.sh"; }
     Mod+D {spawn-sh "flatpak run org.localsend.localsend_app"; }
+    Mod+E {spawn-sh "pcmanfm"; }
+    Mod+O {power-off-monitors; }
+    Mod+P {screenshot; }
+    Mod+A {spawn-sh "waybar"; }
+    Mod+Shift+A {spawn-sh "pkill -9 waybar"; }
     Mod+C {spawn-sh "cliphist list | rofi -dmenu | cliphist decode | wl-copy"; }
     Mod+Shift+C {spawn-sh "cliphist wipe | notify-send -t 3000 'Clipboard Wiped'"; }
-    Super+Alt+L { spawn "swaylock"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
@@ -353,6 +289,7 @@ binds {
 
 
     Mod+Q repeat=false { close-window; }
+    Mod+Shift+Q  { spawn-sh "pkill -9 niri"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -473,19 +410,12 @@ binds {
     Mod+3 { focus-workspace 3; }
     Mod+4 { focus-workspace 4; }
     Mod+5 { focus-workspace 5; }
-    Mod+6 { focus-workspace 6; }
-    Mod+7 { focus-workspace 7; }
-    Mod+8 { focus-workspace 8; }
-    Mod+9 { focus-workspace 9; }
     Mod+Shift+1 { move-column-to-workspace 1; }
     Mod+Shift+2 { move-column-to-workspace 2; }
     Mod+Shift+3 { move-column-to-workspace 3; }
     Mod+Shift+4 { move-column-to-workspace 4; }
     Mod+Shift+5 { move-column-to-workspace 5; }
-    Mod+Shift+6 { move-column-to-workspace 6; }
-    Mod+Shift+7 { move-column-to-workspace 7; }
-    Mod+Shift+8 { move-column-to-workspace 8; }
-    Mod+Shift+9 { move-column-to-workspace 9; }
+
 
     // Alternatively, there are commands to move just a single window:
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
@@ -556,7 +486,6 @@ binds {
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
-    Mod+P {screenshot; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
@@ -571,8 +500,4 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
-
-    // Powers off the monitors. To turn them back on, do any input like
-    // moving the mouse or pressing any other key.
-    Mod+Shift+P { power-off-monitors; }
 }

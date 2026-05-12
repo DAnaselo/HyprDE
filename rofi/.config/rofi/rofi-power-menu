@@ -35,8 +35,8 @@ icons[cancel]="\Uf0156"
 declare -A actions
 actions[lockscreen]="hyprlock"
 actions[suspend]="systemctl suspend"
-actions[reboot]="systemctl reboot"
-actions[shutdown]="systemctl poweroff"
+actions[reboot]="hyprshutdown -t 'Restarting...' --post-cmd 'reboot'"
+actions[shutdown]="hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"
 actions[cancel]="pkill -9 rofi"
 
 # By default, ask for confirmation for actions that are irreversible
