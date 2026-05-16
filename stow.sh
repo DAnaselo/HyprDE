@@ -10,3 +10,4 @@ stow fastfetch
 stow icons
 stow niri
 stow btop
+stow foot

@@ -11,7 +11,7 @@
     "gamemode",
     "clock"
   ],
-  "modules-center": ["niri/window"],
+  "modules-center": ["hyprland/window"],
   "modules-right": [
     "tray",
     "privacy",
@@ -19,7 +19,7 @@
     "wireplumber",
     "custom/power"
   ],
-  "niri/window": {
+  "hyprland/window": {
     "format": "{}"
   },
   "tray":{
